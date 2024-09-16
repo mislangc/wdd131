@@ -1,0 +1,52 @@
+body {
+    display: grid;
+    grid-template: 1fr 2fr 1fr / 1fr 1fr 1fr 1fr;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    grid-column: 1/5;
+}
+
+header div {
+    height: 100px;
+    background-color: maroon;
+    color: white;
+    padding: 1rem;
+}
+
+nav {
+    background-color: rgb(48, 1, 1);
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    flex: 1;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: rgb(118, 43, 43);
+    transition: 0.5s;
+}
+
+main {
+    grid-column: 1/4;
+    padding: 1rem;
+    background-color: rgb(208, 151, 151);
+}
+
+#aside-content {
+    grid-column: 4/5;
+    padding: 1rem;
+}
+
+footer {
+    grid-column: 1/5;
+    padding: 1rem;
+    background-color: maroon;
+    color: white;
+}
