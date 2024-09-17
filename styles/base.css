@@ -1,0 +1,181 @@
+h1 {
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    background-color: maroon;
+    color: rgb(219, 219, 219);
+    padding: 1rem;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    margin: 0;
+    background-color: gray;
+}
+
+nav a {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color: black;
+    font-size: larger;
+}
+
+nav a:hover {
+    background-color: rgb(69, 68, 68);
+    transition: .5s;
+    color: white;
+}
+
+main {
+    width: 95%;
+    margin: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.card {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+.card h2 {
+    text-align: center;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    background-color: maroon;
+    color: rgb(219, 219, 219);
+    padding: 1rem;
+    border-radius: 25px 25px 0 0;
+    margin: 0;
+}
+
+.card p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 1rem;
+}
+
+#profile {
+    display: flex;
+}
+
+#profile img {
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+#country h3 {
+    text-align: center;
+    width: 75%;
+    margin: auto;
+    border-bottom: 1px solid gray;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+}
+
+#countryInfo {
+    display: flex;
+    padding: 1rem;
+}
+
+#flag img {
+    margin: 1rem;
+    margin-bottom: 0;
+}
+
+#flag p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-style: italic;
+}
+
+#webDevList {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: .5rem;
+    height: 80%;
+    margin: 0;
+}
+
+#webDevList li:hover {
+    transform: scale(1.025);
+    transition: .5s;
+}
+
+footer {
+    background-color: maroon;
+    color: rgb(219, 219, 219);
+    padding: 1rem;
+    font-family: "Protest Guerrilla", sans-serif;
+    text-align: center;
+    font-size: larger;
+}
+
+#lastModified {
+    font-size: smaller;
+}
+
+#lastModified,
+#studentNameTitle {
+    color: yellow;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    #profile {
+        flex-direction: column-reverse;
+    }
+
+    #profile img {
+        max-width: 200px;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    #countryInfo {
+        flex-direction: column;
+    }
+
+    #flag {
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        margin: 1rem;
+    }
+
+    #webDevList {
+        margin: 1rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    nav {
+        flex-direction: column;
+    }
+
+    #flag img {
+        width: 75%;
+        margin: auto;
+        display: block;
+    }
+}

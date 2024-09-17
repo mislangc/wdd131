@@ -7,18 +7,65 @@
     <meta name="author" content="Carl Mislang" />
     <meta name="description"
         content="Home Page for the student Carl Benedict P. Mislang studying at BYU-Idaho Online for his course WDD 131 - Dynamic Web Fundamentals. This site contains projects, some student profile and other information related to WDD 131." />
+    <link rel="stylesheet" href="styles/base.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+
     <title>WDD 131 - Dynamic Web Fundamentals - Carl Mislang</title>
+
+    <script defer src="scripts/getdates.js"></script>
 </head>
 
 <body>
     <header>
-
+        <h1>WDD 131: Dynamic Web Fundamentals - <span id="studentNameTitle">Carl Mislang</span></h1>
+        <nav>
+            <a href="https://www.linkedin.com/in/carlbpmislang1419/">LinkedIn</a>
+            <a href="https://byui.instructure.com/">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng">Scripture</a>
+            <a href="#">Projects</a>
+        </nav>
     </header>
     <main>
-
+        <section class="card">
+            <h2>About Me</h2>
+            <div id="profile">
+                <p>My name is Carl Benedict Patague Mislang. I was born in the Philippines and
+                    we live in Tarlac City. I'm studying at Brigham Young University Online and currently taking
+                    Software Development. What I'd love to do during my free time is play the piano, listen to music,
+                    video games and play with our dogs. My fascination for tech started when my father introduced me to
+                    PS1. As I was trying different consoles as I grow up, I eventually arrived at a point of curiosity
+                    of how this games were made. From this point, this led me to code and programming.</p>
+                <img src="images/profile-picture.jfif" alt="profile picture of carl mislang">
+            </div>
+            <div id="country">
+                <h3>Tarlac, Philippines</h3>
+                <div id="countryInfo">
+                    <div id="flag">
+                        <img src="images/flag.png" alt="flag of the philippines">
+                        <p>Official flag of the Philippines</p>
+                    </div>
+                    <p>The Philippines is an archipelagic country in the Southeast Asia. In the western Pacific Ocean,
+                        it consists of 7,641 islands, with a total areaof roughly 300,000 square kilometers, whichare
+                        broadly categorized in three main geographical divisions from north to south: Luzon, Visayas,
+                        and Mindanao.</p>
+                </div>
+            </div>
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul id="webDevList">
+                <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+                <li><a href="https://trinket.io/" target="_blank">Trinket</a></li>
+                <li><a href="https://www.codecademy.com/" target="_blank">Codecademy</a></li>
+            </ul>
+        </section>
     </main>
     <footer>
-
+        <p>&copy;<span id="currentyear"></span> Carl Mislang - Tarlac, Philippines</p>
+        <p id="lastModified"></p>
     </footer>
 </body>
 
