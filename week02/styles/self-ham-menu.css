@@ -1,0 +1,84 @@
+.ham-bar {
+    background-color: maroon;
+    color: white;
+    position: fixed;
+    top: 15%;
+    right: -300px;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+    width: 100%;
+    max-width: 200px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    transition: .3s ease;
+}
+
+.ham-bar ul {
+    list-style-type: none;
+}
+
+.ham-bar ul li {
+    width: 100%;
+    padding: .5rem;
+}
+
+.ham-bar ul li:hover {
+    transform: scale(1.25);
+    transition: .3s ease;
+    font-weight: bold
+}
+
+.ham-bar.active {
+    right: 10px;
+}
+
+nav {
+    background-color: maroon;
+    display: flex;
+    padding: 1rem;
+}
+
+.ham-button {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    position: relative;
+}
+
+.ham-button span {
+    top: 50%;
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    margin: 1px;
+    position: absolute;
+    transition: .3s ease;
+}
+
+.ham-button span:nth-child(1) {
+    top: 25%;
+}
+
+.ham-button span:nth-child(3) {
+    top: 75%;
+}
+
+.ham-button.active span:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+}
+
+.ham-button.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.ham-button.active span:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg);
+}
