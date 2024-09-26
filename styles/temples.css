@@ -99,6 +99,9 @@ nav a.active::before {
 main {
     width: 95%;
     margin: auto;
+}
+
+#temples-list {
     display: grid;
     grid-template-columns: 1fr;
 }
