@@ -1,4 +1,4 @@
-//Same footer as home page, so same JavaScript.
+//Same footer as home page, so same JavaScript. Lines 1 - 11
 const year = document.querySelector("#currentyear");
 const lastModified = document.querySelector("#lastModified");
 

@@ -1,0 +1,44 @@
+@media screen and (min-width: 720px) {
+    h1 {
+        font-size: 4vw;
+    }
+
+    .child-main {
+        position: relative;
+    }
+
+    .child-main section {
+        position: absolute;
+        background-color: white;
+        opacity: 85%;
+        box-shadow: 5px 10px 20px black;
+    }
+
+    .data-section {
+        top: 2rem;
+        left: 2rem;
+    }
+
+    section h2 {
+        text-align: left;
+        background-color: darkgreen;
+        color: white;
+        padding: 1rem;
+        position: relative;
+        right: 1rem;
+    }
+
+    .weather-section img {
+        display: none;
+    }
+
+    .weather-section h2::after {
+        content: "⛅";
+    }
+
+    .weather-section {
+        bottom: 2rem;
+        right: 2rem;
+    }
+
+}

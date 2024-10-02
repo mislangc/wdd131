@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Carl Mislang">
+    <meta name="description" content="Week 3 Assignment for WDD 131 by Carl Mislang in BYU-Idaho Online">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Rock+Salt&display=swap" rel="stylesheet">
+
+    <title>Place</title>
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Hawaii</h1>
+    </header>
+    <main>
+        <div class="child-main">
+            <div class="hero">
+                <picture>
+                    <source media="(min-width: 1000px)" srcset="images/hawaii-large.webp">
+                    <source media="(min-width: 500px)" srcset="images/hawaii-medium.webp">
+                    <img src="images/hawaii-small.webp"
+                        alt="picture of blue tang fishes in hawaii. Picture of turtle underwater in hawaii in large view."
+                        width="500px" height="500px">
+                </picture>
+            </div>
+            <section class="data-section">
+                <h2>Data</h2>
+                <table>
+                    <tbody id="data-table"></tbody>
+                </table>
+            </section>
+            <section class="weather-section">
+                <h2>Weather</h2>
+                <img src="images/weather-sunny.svg">
+                <table>
+                    <tbody id="weather-table"></tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Carl Mislang - Tarlac, Philippines</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
