@@ -1,0 +1,32 @@
+table {
+    border: 1px;
+    margin: auto;
+}
+
+thead tr th {
+    border: 1px solid black;
+}
+
+thead tr:first-child th,
+thead tr:nth-child(2) th:first-child {
+    background-color: black;
+    color: white;
+}
+
+thead tr:nth-child(2) th {
+    background-color: rgb(59, 59, 59);
+    color: white;
+}
+
+tbody tr:nth-child(odd) th {
+    background-color: white;
+}
+
+tbody tr:nth-child(even) td {
+    background-color: rgb(229, 229, 229);
+}
+
+caption {
+    caption-side: bottom;
+    padding: 0;
+}
