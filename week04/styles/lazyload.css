@@ -1,0 +1,39 @@
+h1 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+img {
+    object-fit: cover;
+    display: block;
+    margin: 1rem auto;
+    animation: fade 5s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+footer {
+    background-color: maroon;
+    color: rgb(219, 219, 219);
+    padding: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: larger;
+}
+
+#lastModified {
+    font-size: smaller;
+}
+
+#lastModified,
+#studentNameTitle {
+    color: yellow;
+}
