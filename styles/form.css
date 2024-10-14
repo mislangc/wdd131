@@ -1,0 +1,113 @@
+:root {
+    --base-color: maroon;
+    --secondary-color: darkgreen;
+    --text-color-light: rgb(219, 219, 219);
+}
+
+header {
+    background-color: var(--base-color);
+    padding: 1rem;
+}
+
+h1 {
+    color: var(--text-color-light);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main {
+    background-color: rgb(255, 225, 225);
+}
+
+form {
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.star-rating {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.star-rating input {
+    display: block;
+    margin: 0 auto;
+}
+
+.star-rating label {
+    margin: 0 1rem;
+}
+
+form div,
+form label {
+    margin-top: 1rem;
+    max-width: 400px;
+}
+
+form input[type="text"],
+form input[type="date"],
+form textarea {
+    display: block;
+    padding: .75rem;
+    width: 94%;
+    max-width: 400px;
+    appearance: none;
+}
+
+form select {
+    display: block;
+    padding: .75rem;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+form input[type="checkbox"] {
+    margin-right: .75rem;
+}
+
+form label {
+    display: block;
+}
+
+form strong {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+form span {
+    color: blue;
+}
+
+form span,
+form i,
+.checkbox {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+form input[type="submit"] {
+    width: 96%;
+    max-width: 360px;
+    margin: 1rem 2% 1rem 2%;
+    padding: .75rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+}
+
+/* Same footer CSS in previous html files/assignment */
+footer {
+    background-color: var(--base-color);
+    color: var(--text-color-light);
+    padding: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    text-align: center;
+    font-size: larger;
+}
+
+#lastModified {
+    font-size: smaller;
+}
+
+#lastModified,
+#studentNameTitle {
+    color: yellow;
+}

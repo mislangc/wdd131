@@ -1,0 +1,44 @@
+:root {
+    --base-color: maroon;
+    --secondary-color: darkgreen;
+    --text-color-light: rgb(219, 219, 219);
+}
+
+header {
+    background-color: var(--base-color);
+    padding: 1rem;
+}
+
+h1 {
+    color: var(--text-color-light);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main {
+    background-color: rgb(255, 225, 225);
+}
+
+#review {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 1rem;
+}
+
+/* Same footer CSS in previous html files/assignment */
+footer {
+    background-color: var(--base-color);
+    color: var(--text-color-light);
+    padding: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    text-align: center;
+    font-size: larger;
+}
+
+#lastModified {
+    font-size: smaller;
+}
+
+#lastModified,
+#studentNameTitle {
+    color: yellow;
+}
