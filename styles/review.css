@@ -11,7 +11,8 @@ header {
 
 h1 {
     color: var(--text-color-light);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
 }
 
 main {
@@ -28,7 +29,8 @@ footer {
     background-color: var(--base-color);
     color: var(--text-color-light);
     padding: 1rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
     font-style: normal;
     text-align: center;
     font-size: larger;
