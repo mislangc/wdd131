@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Carl Mislang">
+    <meta name="description" content="project website by Carl Mislang in WDD 131">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Rock+Salt&display=swap" rel="stylesheet">
+
+    <title>Gamers Alley</title>
+    <script src="scripts/index.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Gamers Alley</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="contact-us.html">Contact Us</a>
+        </nav>
+        <div class="ham-button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <main>
+        <picture class="hero-image">
+            <img src="images/world-of-warcraft.jpg" alt="hero-image" loading="lazy">
+            <p>World of Warcraft</p>
+        </picture>
+        <section>
+            <h2>Popular Games</h2>
+            <div class="horizontal-scroll" id="popular-games"></div>
+        </section>
+        <section>
+            <h2>Featured Games</h2>
+            <div class="horizontal-scroll" id="featured-games"></div>
+        </section>
+        <section>
+            <h2>Discover more games here!</h2>
+            <a href="discover.html" class="discover-button">Discover</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Carl Mislang - Tarlac, Philippines</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,185 @@
+:root {
+    --main-color: rgb(31, 14, 92);
+    --secondary-color: rgb(45, 13, 120);
+    --tertiary-color: rgb(222, 229, 255);
+    --font-color: rgb(255, 255, 255);
+    --secondcary-font-color: rgb(0, 0, 0);
+    --main-font: "Luckiest Guy", cursive;
+    --secondary-font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --paragraph-font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+/* Add code here */
+header {
+    background-color: var(--main-color);
+    padding: 1rem;
+    display: flex;
+    color: var(--font-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-family: var(--main-font);
+    font-weight: 400;
+}
+
+.hero-image {
+    position: relative;
+}
+
+.hero-image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero-image p {
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+    color: var(--font-color);
+    font-family: var(--secondary-font);
+}
+
+nav {
+    position: absolute;
+    top: 10%;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    opacity: 0%;
+    flex-direction: column;
+    background-color: var(--main-color);
+    padding: 1rem;
+    transition: .25s ease;
+    z-index: 1;
+}
+
+nav.active {
+    display: flex;
+    opacity: 100%;
+    top: 15%;
+}
+
+a {
+    text-decoration: none;
+    font-family: var(--secondary-font);
+    color: var(--font-color);
+    margin: 1rem;
+}
+
+/* Ham button */
+.ham-button {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    z-index: 1;
+    margin: 1rem;
+}
+
+.ham-button span {
+    top: 50%;
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    margin: 1px;
+    position: absolute;
+    transition: .3s ease;
+}
+
+.ham-button span:nth-child(1) {
+    top: 25%;
+}
+
+.ham-button span:nth-child(3) {
+    top: 75%;
+}
+
+.ham-button.active span:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+}
+
+.ham-button.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.ham-button.active span:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg);
+}
+
+/* Ham button css end */
+
+img:hover {
+    opacity: 50%;
+    transition: .5s;
+}
+
+section {
+    margin: 2rem;
+    background-color: var(--tertiary-color);
+    font-family: var(--secondary-font);
+    padding: 1px 1rem .5rem 1rem;
+    border-radius: 5px;
+}
+
+section h2 {
+    text-align: center;
+}
+
+.horizontal-scroll {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.horizontal-scroll picture img {
+    object-fit: cover;
+}
+
+.horizontal-scroll picture {
+    position: relative;
+}
+
+.horizontal-scroll picture p {
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+    color: var(--font-color)
+}
+
+.discover-button {
+    background-color: var(--secondary-color);
+    display: block;
+    width: 25%;
+    margin: auto;
+    text-align: center;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--main-color);
+    color: var(--font-color);
+    padding: 1rem;
+    font-family: "Luckiest Guy", sans-serif, cursive;
+    text-align: center;
+    font-size: larger;
+}
+
+#lastModified {
+    font-size: smaller;
+}
+
+#lastModified,
+#studentNameTitle {
+    color: yellow;
+}

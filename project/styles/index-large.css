@@ -1,0 +1,12 @@
+@media screen and (min-width: 800px) {
+    .ham-button {
+        display: none;
+    }
+
+    nav {
+        position: relative;
+        flex-direction: row;
+        opacity: 100%;
+        font-size: larger;
+    }
+}
