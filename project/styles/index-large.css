@@ -4,6 +4,7 @@
     }
 
     nav {
+        top: 10%;
         position: relative;
         flex-direction: row;
         opacity: 100%;

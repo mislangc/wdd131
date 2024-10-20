@@ -48,7 +48,7 @@ h1 {
 
 nav {
     position: absolute;
-    top: 10%;
+    top: -200px;
     left: 0px;
     right: 0px;
     display: flex;
@@ -56,7 +56,7 @@ nav {
     flex-direction: column;
     background-color: var(--main-color);
     padding: 1rem;
-    transition: .25s ease;
+    transition: .25s ease-out;
     z-index: 1;
 }
 
@@ -163,6 +163,53 @@ section h2 {
     text-align: center;
     border-radius: 5px;
     padding: 1rem;
+}
+
+/*Contact us page*/
+form {
+    margin: 1rem;
+}
+
+form label {
+    width: 80%;
+    max-width: 400px;
+    margin: 1rem;
+    font-family: var(--secondary-font);
+    display: block;
+}
+
+form input,
+form textarea,
+form select {
+    padding: .75rem;
+    width: 100%;
+}
+
+form select:required,
+form input:required {
+    border: 1px solid red;
+}
+
+form select:required:valid,
+form input:required:valid {
+    border: 1px solid var(--main-color);
+}
+
+form textarea {
+    height: 100px;
+}
+
+form input[type="submit"] {
+    background-color: var(--secondary-color);
+    color: white;
+    font-family: var(--paragraph-font);
+}
+
+/* Thanks Page*/
+
+#thanks-response {
+    font-family: var(--paragraph-font);
+    margin: 1rem;
 }
 
 /* Footer */

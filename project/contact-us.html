@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Carl Mislang">
+    <meta name="description" content="project website by Carl Mislang in WDD 131">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Rock+Salt&display=swap" rel="stylesheet">
+
+    <title>Gamers Alley</title>
+    <script src="scripts/contact-us.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Gamers Alley</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="contact-us.html">Contact Us</a>
+        </nav>
+        <div class="ham-button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <main>
+        <form method="get" action="thanks.html">
+            <label><strong>Game Name*</strong><input type="text" name="gamename" id="gamename" required></label>
+            <label><strong>Genre*</strong>
+                <select id="genres" name="genres" required>
+                    <option value="" disabled selected>Select a Product... &#9662;</option>
+                </select>
+            </label>
+            <label><strong>Additional Comments</strong><textarea id="comments" name="comments">
+            </textarea></label>
+            <label><strong>Username</strong><input type="text" name="username" id="username"></label>
+            <label><input type="submit" value="Propose Game"></label>
+        </form>
+
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Carl Mislang - Tarlac, Philippines</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
