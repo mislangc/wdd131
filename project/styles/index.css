@@ -165,7 +165,38 @@ section h2 {
     padding: 1rem;
 }
 
-/*Contact us page*/
+/* ---------------------------- Discover page --------------------------- */
+.discover-page-filter {
+    margin: 1rem;
+    font-family: var(--secondary-font);
+}
+
+.genre-filter {
+    margin: 1rem;
+    padding: .75rem;
+}
+
+.discover-games picture img {
+    object-fit: cover;
+}
+
+.discover-games picture p {
+    text-align: center;
+    margin: 0;
+    font-family: var(--paragraph-font);
+}
+
+.discover-games picture {
+    margin: 1rem;
+}
+
+.discover-games {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* ---------------------------- Contact us page --------------------------- */
 form {
     margin: 1rem;
 }
@@ -187,7 +218,7 @@ form select {
 
 form select:required,
 form input:required {
-    border: 1px solid red;
+    border: 2px solid red;
 }
 
 form select:required:valid,
@@ -205,7 +236,7 @@ form input[type="submit"] {
     font-family: var(--paragraph-font);
 }
 
-/* Thanks Page*/
+/* ----------------------------------- Thanks Page -------------------------------------*/
 
 #thanks-response {
     font-family: var(--paragraph-font);

@@ -1,6 +1,6 @@
 const genreSelect = document.querySelector("#genres");
 
-const genres = ["Open World", "MMORPG", "RPG", "Action", "Adventure", "Sports", "Puzzle", "FPS", "Sandbox", "Fighting", "Horror", "Racing", "Casual", "Management", "Survival", "RTS", "Strategy", "Battle Royale"];
+const genres = ["Open World", "MMORPG", "MMO", "RPG", "MOBA", "Action", "Adventure", "Sports", "Puzzle", "FPS", "Sandbox", "Fighting", "Horror", "Racing", "Casual", "Management", "Survival", "RTS", "Strategy", "Battle Royale"];
 
 function genreTemplate(genre) {
     const splitWord = genre.split(" ");
@@ -10,8 +10,7 @@ function genreTemplate(genre) {
     return `<option value="${smallLetters}">${genre}</option>`
 }
 
-const genreOptions = genres.map(genreTemplate);
-console.log(genreOptions);
+const genreOptions = (genres.sort()).map(genreTemplate);
 genreSelect.innerHTML += genreOptions.join("");
 
 //footer
