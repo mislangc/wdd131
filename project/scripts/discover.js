@@ -149,6 +149,15 @@ const gamesList = [
     },
 ]
 
+//sort gamesList. From stackoverflow website
+gamesList.sort(function (a, b) {
+    let x = a.name.toLowerCase();
+    let y = b.name.toLowerCase();
+    if (x < y) { return -1; }
+    if (x > y) { return 1; }
+    return 0;
+});
+
 const genres = ["Open World", "MMORPG", "MMO", "RPG", "MOBA", "Action", "Adventure", "Sports", "Puzzle", "FPS", "TPS", "Sandbox", "Fighting", "Horror", "Racing", "Casual", "Management", "Survival", "RTS", "Strategy", "Battle Royale"];
 
 //make game cards to display

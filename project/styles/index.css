@@ -218,6 +218,7 @@ section h2 {
     text-align: center;
     margin: 0;
     font-family: var(--paragraph-font);
+    font-size: small;
 }
 
 .discover-games picture {
