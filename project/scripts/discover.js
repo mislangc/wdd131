@@ -25,7 +25,7 @@ const gamesList = [
     {
         name: "World of Warcraft",
         img: "images/world-of-warcraft.jpg",
-        genre: ["Fantasy", "MMO"]
+        genre: ["Fantasy", "MMO", "MMORPG"]
     },
     {
         name: "CS GO",
@@ -34,7 +34,7 @@ const gamesList = [
     },
     {
         name: "League of Legends",
-        img: "images/league-of-legends.jpg",
+        img: "images/league-of-legends.webp",
         genre: ["Action", "MOBA", "RTS"]
     },
     {
@@ -54,7 +54,7 @@ const gamesList = [
     },
     {
         name: "Silent Hill 2",
-        img: "images/silent-hill-two.png",
+        img: "images/silent-hill-two.jpg",
         genre: ["Horror", "Survival"]
     },
     {
@@ -69,7 +69,7 @@ const gamesList = [
     },
     {
         name: "Monster Hunter World",
-        img: "images/monster-hunter-world.png",
+        img: "images/monster-hunter-world.webp",
         genre: ["Action", "Adventure", "Fighting", "RPG"]
     },
     {
@@ -92,14 +92,69 @@ const gamesList = [
         img: "images/apex-legends.jpg",
         genre: ["Battle Royale", "FPS"]
     },
+    {
+        name: "Hitman 3",
+        img: "images/hitman-three.jpg",
+        genre: ["Action", "TPS"]
+    },
+    {
+        name: "Baldurs Gate 3",
+        img: "images/baldurs-gate-three.jpeg",
+        genre: ["RPG", "Strategy", "Adventure"]
+    },
+    {
+        name: "Tekken 8",
+        img: "images/tekken-eight.jpg",
+        genre: ["Fighting", "Action"]
+    },
+    {
+        name: "Factorio",
+        img: "images/factorio.jpg",
+        genre: ["Management", "Sandbox"]
+    },
+    {
+        name: "Dyson Sphere Program",
+        img: "images/dyson-sphere-program.jpg",
+        genre: ["Management", "Sandbox"]
+    },
+    {
+        name: "Genshin Impact",
+        img: "images/genshin-impact.jpg",
+        genre: ["Open World", "RPG", "Fantasy"]
+    },
+    {
+        name: "Stardew Valley",
+        img: "images/stardew-valley.jpg",
+        genre: ["Casual", "Management"]
+    },
+    {
+        name: "The Witness",
+        img: "images/the-witness.jpg",
+        genre: ["Puzzle", "Fantasy"]
+    },
+    {
+        name: "Guild Wars 2",
+        img: "images/guild-wars-two.jpg",
+        genre: ["Open World", "MMORPG", "MMO"]
+    },
+    {
+        name: "Gran Turismo 7",
+        img: "images/gran-turismo-seven.jpg",
+        genre: ["Racing", "Adventure"]
+    },
+    {
+        name: "Starcraft 2",
+        img: "images/starcraft-two.jpg",
+        genre: ["Action", "RTS", "Management"]
+    },
 ]
 
-const genres = ["Open World", "MMORPG", "MMO", "RPG", "MOBA", "Action", "Adventure", "Sports", "Puzzle", "FPS", "Sandbox", "Fighting", "Horror", "Racing", "Casual", "Management", "Survival", "RTS", "Strategy", "Battle Royale"];
+const genres = ["Open World", "MMORPG", "MMO", "RPG", "MOBA", "Action", "Adventure", "Sports", "Puzzle", "FPS", "TPS", "Sandbox", "Fighting", "Horror", "Racing", "Casual", "Management", "Survival", "RTS", "Strategy", "Battle Royale"];
 
 //make game cards to display
 function gameCardsTemplate(game) {
     return `<picture>
-                <img src="${game.img}" alt="photo of the game ${game.name}" width=160 height=240 loading="lazy">
+                <img src="${game.img}" alt="photo of the game ${game.name}" width="160" height="240" loading="lazy">
                 <p>${game.name}</p>
             </picture>`
 }

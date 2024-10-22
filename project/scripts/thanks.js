@@ -1,3 +1,20 @@
+let timesVisited = getTimes() || 0;
+
+function getTimes() {
+    return JSON.parse(localStorage.getItem("timesVisited"));
+}
+
+function addVisit() {
+    timesVisited++;
+}
+
+function setTimes() {
+    localStorage.setItem("timesVisited", timesVisited);
+}
+
+addVisit();
+setTimes();
+
 //footer
 const year = document.querySelector("#currentyear");
 const lastModified = document.querySelector("#lastModified");

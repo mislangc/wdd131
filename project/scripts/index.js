@@ -23,6 +23,26 @@ const featuredGames = [
         name: "World of Warcraft",
         img: "images/world-of-warcraft.jpg"
     },
+    {
+        name: "Stardew Valley",
+        img: "images/stardew-valley.jpg",
+    },
+    {
+        name: "The Witness",
+        img: "images/the-witness.jpg",
+    },
+    {
+        name: "Guild Wars 2",
+        img: "images/guild-wars-two.jpg",
+    },
+    {
+        name: "Gran Turismo 7",
+        img: "images/gran-turismo-seven.jpg",
+    },
+    {
+        name: "Starcraft 2",
+        img: "images/starcraft-two.jpg",
+    },
 ]
 
 const popularGames = [
@@ -32,7 +52,7 @@ const popularGames = [
     },
     {
         name: "League of Legends",
-        img: "images/league-of-legends.jpg"
+        img: "images/league-of-legends.webp"
     },
     {
         name: "Overwatch",
@@ -41,6 +61,30 @@ const popularGames = [
     {
         name: "Valorant",
         img: "images/valorant.jpg"
+    },
+    {
+        name: "Cyberpunk 2077",
+        img: "images/cyberpunk.jpg",
+    },
+    {
+        name: "Apex Legends",
+        img: "images/apex-legends.jpg",
+    },
+    {
+        name: "Hitman 3",
+        img: "images/hitman-three.jpg",
+    },
+    {
+        name: "Baldurs Gate 3",
+        img: "images/baldurs-gate-three.jpeg",
+    },
+    {
+        name: "Tekken 8",
+        img: "images/tekken-eight.jpg",
+    },
+    {
+        name: "Factorio",
+        img: "images/factorio.jpg",
     },
 ]
 

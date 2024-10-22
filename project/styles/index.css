@@ -46,6 +46,45 @@ h1 {
     font-family: var(--secondary-font);
 }
 
+#hero-images {
+    position: relative;
+}
+
+#hero-image-one {
+    position: absolute;
+    width: 100%;
+    animation-name: switch-first;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+#hero-image-two {
+    animation-name: switch-second;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes switch-first {
+    50% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+
+@keyframes switch-second {
+    50% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
 nav {
     position: absolute;
     top: -200px;
@@ -118,11 +157,6 @@ a {
 
 /* Ham button css end */
 
-img:hover {
-    opacity: 50%;
-    transition: .5s;
-}
-
 section {
     margin: 2rem;
     background-color: var(--tertiary-color);
@@ -187,7 +221,7 @@ section h2 {
 }
 
 .discover-games picture {
-    margin: 1rem;
+    margin: .5rem;
 }
 
 .discover-games {

@@ -33,13 +33,26 @@
         </div>
     </header>
     <main>
-        <picture class="hero-image">
-            <img src="images/world-of-warcraft.jpg" alt="hero-image" loading="lazy">
-            <p>World of Warcraft</p>
-        </picture>
+        <div id="hero-images">
+            <div id="hero-image-one" class="hero-image">
+                <picture>
+                    <source media="(min-width: 800px)" srcset="images/world-of-warcraft-large.webp">
+                    <img src="images/world-of-warcraft.jpg" alt="hero-image" loading="lazy" width="720" height="360">
+                </picture>
+                <p>World of Warcraft</p>
+            </div>
+            <div id="hero-image-two" class="hero-image">
+                <picture>
+                    <source media="(min-width: 800px)" srcset="images/call-of-duty-large.jpg">
+                    <img src="images/call-of-duty.jpg" alt="hero-image" loading="lazy" width="720" height="360">
+                </picture>
+                <p>Call of Duty: Modern Warfare</p>
+            </div>
+        </div>
         <section>
             <h2>Popular Games</h2>
-            <div class="horizontal-scroll" id="popular-games"></div>
+            <div class=" horizontal-scroll" id="popular-games">
+            </div>
         </section>
         <section>
             <h2>Featured Games</h2>

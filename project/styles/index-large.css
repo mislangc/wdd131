@@ -10,4 +10,8 @@
         opacity: 100%;
         font-size: larger;
     }
+
+    .hero-image p {
+        font-size: xx-large;
+    }
 }
