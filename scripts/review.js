@@ -1,3 +1,5 @@
+let main = document.querySelector("main");
+
 let counter = getCount() || 0;
 
 function getCount() {
@@ -14,6 +16,8 @@ function setCount() {
 
 addCount();
 setCount();
+
+main.innerHTML += `<p class="review">Successful review sent count: ${counter}</p>`;
 
 const year = document.querySelector("#currentyear");
 const lastModified = document.querySelector("#lastModified");
